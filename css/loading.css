@@ -1,0 +1,86 @@
+html{width:100%;height:100%;margin:0;}
+body{width:100%;height:100%;margin:0;}
+#out{
+    z-index:1000;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    transition-duration: 1.5s;/*�t�F�[�h�A�E�g�p*/
+}
+#loading{
+  --side:10vmin;
+  --space:2vmin;
+  --scale:1;
+  --duration:2000ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(var(--side) * 2 + var(--space) * 3);
+  height: calc(var(--side) * 2 + var(--space) * 3);
+  @--webkit-animation: round 0.3s linear 0s 1 normal;
+}
+.block{
+  position: absolute;
+  float: left;
+  margin: var(--space);
+  width:var(--side);
+  height:var(--side);
+  background-color:black;
+
+  animation-duration: var(--duration);
+  animation-timing-function:cubic-bezier(0.75, 0.1, 0.25, 1.0);
+  animation-iteration-count: infinite;
+}
+#block1{
+  animation-name: round;
+  background-color: #F5BD00;
+  animation-delay: calc(var(--duration) / 4 * 0);
+}
+#block2{
+  animation-name: round;
+  background-color: #BBD738;
+  animation-delay: calc(var(--duration) / 4 * 1);
+}
+#block3{
+  animation-name: round;
+  background-color:  #2DB8B6;
+  animation-delay: calc(var(--duration) / 4 * 2);
+}
+#block4{
+  animation-name: round;
+  background-color: #EAA4C6;
+  animation-delay: calc(var(--duration) / 4 * 3);
+}
+
+@keyframes round{
+  0%{
+    transform:translateX(0vmin) translateY(0vmin) scale(var(--scale));
+  }
+  25%{
+    transform: translateX(0vmin) translateY(calc(var(--side) + var(--space))) scale(var(--scale));
+  }
+  50%{
+    transform:translateX(calc(var(--side) + var(--space))) translateY(calc(var(--side) + var(--space))) scale(var(--scale));
+  }
+  75%{
+    transform:translateX(calc(var(--side) + var(--space))) translateY(0vmin) scale(var(--scale));
+  }
+  /*
+  12.5%{
+    transform: translateX(0vmin) translateY(6vmin) scale(1);
+  }
+  37.5%{
+    transform:translateX(6vmin) translateY(calc(var(--side) + var(--space))) scale(1);
+  }
+  62.5%{
+    transform:translateX(calc(var(--side) + var(--space))) translateY(6vmin) scale(1);
+  }
+  87.5%{
+    transform:translateX(6vmin) translateY(0vmin) scale(1);
+  }
+  */
+}
