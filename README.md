@@ -1,1 +1,0 @@
-# zenypota.github.io
