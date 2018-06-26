@@ -1,264 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-	<meta name="description" content="BitZenyで買い物や投げ銭などができるポータルサイトです。現在開発中です。お楽しみに!">
-    <meta name="keywords" content="BitZeny,Portal,Wallet,ゼニー,仮想通貨,ビットゼニー,ポータル,ウォレット,オンラインウォレット">
-    <title>ゼニポタ</title>
-
-    <!-- CSS  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
-    <link rel="stylesheet" href="css/loading.css" />
-		<!-- <link rel="stylesheet" href="css/materialize.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="https://zenypota.net/favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="loading.css" />
+  <title>Document</title>
 </head>
-<body id="top" class="scrollspy">
+<body>
   <div id="out">
+<!--
     <div id="loading">
       <div id="block1" class="block"></div>
       <div id="block2" class="block"></div>
       <div id="block3" class="block"></div>
       <div id="block4" class="block"></div>
     </div>
+-->
+    <div id="loading">
+      <img href="loaing_svg/1.svg" id="block1" class="block"></img>
+      <img href="loaing_svg/2.svg" id="block2" class="block"></img>
+      <img href="loaing_svg/3.svg" id="block3" class="block"></img>
+      <img href="loaing_svg/4.svg" id="block4" class="block"></img>
+    </div>
   </div>
-<!-- Pre Loader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
-
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-
-</div>
-
-<!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation" style="background-image: linear-gradient(-90deg, #00BBE6, #C300E6);">
-        <div class="container">
-            <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo"><img src="img/zenypota.svg" style="height: 1.5em; margin-top: 0.25em;"></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#service">サービス</a></li>
-                    <li><a href="#tip">寄付</a></li>
-                    <li><a href="#team">開発チーム</a></li>
-                    <li><a href="https://blog.zenypota.net">公式ブログ</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#service">サービス</a></li>
-                    <li><a href="#tip">寄付</a></li>
-                    <li><a href="#team">開発チーム</a></li>
-                    <li><a href="https://blog.zenypota.net">公式ブログ</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse show-on-medium-and-down" style="left: -10px;"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<!--Hero-->
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
-            <span class="cd-words-wrapper waiting">
-            	<b class="is-visible">Bitzenyを貯める</b>
-                <b>商品を出品する</b>
-                <b>イラストを投稿する</b>
-                <b>文章を執筆する</b>
-            </span>
-        </h1>
-    </div>
-</div>
-
-<!--Intro and service-->
-<div id="service" class="section scrollspy">
-    <div class="container">
-        <div class="row">
-            <div  class="col s12">
-                <h2 class="center header text_h2"> ゼニポタはあらゆる仮想通貨のための<br><span class="span_h2"> 革新的  </span> なサービスです。</h2>
-            </div>
-
-            <div  class="col s12 m3 l3">
-                <div class="center promo promo-example">
-                    <i class="far fa-money-bill-alt" style="margin-top: 32px; margin-bottom: 32px;"></i>
-                    <h5 class="promo-caption">オンラインウォレット</h5>
-                    <p class="light center">ゼニポタはオンラインウォレット機能を備えています。 お預かりしたコインは支払い、投げ銭などに使用できます。</p>
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="center promo promo-example">
-                    <i class="fas fa-shopping-cart" style="margin-top: 32px; margin-bottom: 32px;"></i>
-                    <h5 class="promo-caption">フリーマーケット</h5>
-                    <p class="light center">BitZenyを使った買い物ができるサービス「ゼニマ(仮称)」を予定しています。 もちろん支払いはゼニポタのウォレットを使用して安全に決済できます。</p>
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="center promo promo-example">
-                    <i class="far fa-image" style="margin-top: 32px; margin-bottom: 32px;"></i>
-                    <h5 class="promo-caption">イラスト掲示板</h5>
-                    <p class="light center">Pixivのように画像・イラストを投稿して投げ銭をもらえるかも？お題を投稿することもできます。</p>
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="center promo promo-example">
-                    <i class="fas fa-edit" style="margin-top: 32px; margin-bottom: 32px;"></i>
-                    <h5 class="promo-caption">ミニブログ</h5>
-                    <p class="light center">自分で好きな記事を投稿して投げ銭をもらったり、情報を共有したりすることができます。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Tip-->
-<div class="section scrollspy" id="tip" style="background: rgb(247, 247, 247);">
-    <div class="container">
-        <h2 class="header text_b">寄付</h2>
-        <div class="row">
-            <div  class="col s12">
-                <h2 class="center text_h2">現在の寄付額</h2>
-                	<h3 class="center text_h3"><b>-</b></h3>
-									<div class="center">寄付されたbitzenyをりん姫から外部に移動するため、一時的に寄付額表示を無効化しています。</div>
-                <div class="center" style="margin: 3em;">
-									<a class="waves-effect waves-light btn-large" href="http://twitter.com/intent/tweet?text=@zenytips tip @zenypota <寄付額>">ゼニポタへ寄付する</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax1.png"></div>
-</div>
-
-<!--Team-->
-<div class="section scrollspy" id="team">
-    <div class="container">
-        <h2 class="header text_b"> 運営チーム </h2>
-        <div class="row">
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">ふじしゃん <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">リーダー</a></em></small></span>
-                        <p><a href="https://twitter.com/Fujiwaraizuho">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-2.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">メイプルらぼ <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">デザイナー</a></em></small>
-                        </span>
-                        <p><a href="https://twitter.com/MaipleLab">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-3.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">おのかちお <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">猫</a></em></small></span>
-                        <p><a href="https://twitter.com/onokatio_">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-5.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Moscwa <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Webデザイナー</a></em></small></span>
-                        <p><a href="https://twitter.com/moscwa_">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-7.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">セルペンティ <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">マネージャー</a></em></small></span>
-                        <p><a href="https://twitter.com/inogucci117">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/team-4.jpg" style="filter:brightness(30%);">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Raspi0124 <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">バックエンド(休養中)</a></em></small></span>
-                        <p><a href="https://twitter.com/raspi0124">Twitter</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Footer-->
-<footer id="contact" class="page-footer default_color scrollspy" style="background-image: linear-gradient(-90deg, #00BBE6, #C300E6);">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h2 class="header text_b" style="color: white;"> お問い合わせ </h2>
-                <h3 class="center text_h2" style="color: white;"><b>info@zenypota.net</b></h3>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright default_color" style="background-image: linear-gradient(-90deg, #00BBE6, #C300E6);">
-        <div class="container">
-            Copyright © 2018 ゼニポタ. All Rights Reserved.
-        </div>
-    </div>
-</footer>
-
-
-    <!--  Scripts-->
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<!-- <script src="min/plugin-min.js"></script> -->
-    <script src="min/custom-min.js"></script>
-
-    <script>
-    window.onload=function(){
-      var loading=document.getElementById("out")
-      window.setTimeout(function(){
-          loading.style.opacity=0
-          window.setTimeout(function(){
-            loading.style.display="none"
-          },1500)
-      },1500)
-
-    }
-    </script>
-    </body>
+<h1>main</h1>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+<h1>main</h1><br/>
+  <script src="main.js"></script>
+</body>
 </html>
